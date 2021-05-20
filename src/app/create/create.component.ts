@@ -24,5 +24,6 @@ export class CreateComponent implements OnInit {
 
   registerUser = () => {
     this.store.dispatch(new AddUser(this.registrationForm.value));
+    this.registrationForm.reset();
   }
 }

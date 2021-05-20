@@ -1,3 +1,7 @@
-<ul>
-  <li *ngFor="let user of users$ | async">{{user.name}}</li>
+<ul class="list-group list-group-horizontal d-flex justify-content-center">
+    <li *ngFor="let user of users$ | async" class="w-25 list-group-item d-flex justify-content-between">
+        <span><i class="far fa-2x fa-user-circle"></i></span>
+        <span class="pt-1">{{user.name}}</span>
+        <span class="pt-1">{{user.email}}</span>
+    </li>
 </ul>

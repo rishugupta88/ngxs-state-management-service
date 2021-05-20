@@ -5,18 +5,21 @@ import {Observable} from 'rxjs';
 import {UserState} from '../store/state/user.state';
 
 @Component({
-  selector: 'app-read',
-  templateUrl: './read.component.html',
-  styleUrls: ['./read.component.scss']
+    selector: 'app-read',
+    templateUrl: './read.component.html',
+    styleUrls: ['./read.component.scss']
 })
 export class ReadComponent implements OnInit {
 
-  @Select(UserState.getUsers) users$: Observable<User>;
+    // users$: User[];
 
-  constructor(private readonly store: Store) {
-  }
+    @Select(UserState.getUsers) users$: Observable<User>;
 
-  ngOnInit() {
-  }
+    constructor(private readonly store: Store) {
+        // this.store.select(UserState.getUsers).subscribe(response => this.users$ = response);
+    }
+
+    ngOnInit() {
+    }
 
 }

@@ -1,4 +1,4 @@
-<div class="p-4">
+<div class="p-4 w-75">
   <form [formGroup]="registrationForm">
     <div class="form-group">
       <label for="name">Name</label>
@@ -9,6 +9,6 @@
       <label for="email">Email</label>
       <input type="email" class="form-control" formControlName="email" id="email" placeholder="Email address">
     </div>
-    <button type="submit" class="btn btn-primary" (click)="registerUser()">Submit</button>
+    <button type="submit" class="btn btn-primary float-right" (click)="registerUser()">Add</button>
   </form>
 </div>

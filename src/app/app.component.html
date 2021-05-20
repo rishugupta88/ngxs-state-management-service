@@ -1,14 +1,19 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
+    <h1>
+        Welcome to {{ title }}!
+    </h1>
 </div>
-<div>
-  <app-create></app-create>
+<div class="row mt-5">
+    <div class="col-6">
+        <app-create></app-create>
+    </div>
+  <div class="col-6">
+    <img src="./assets/flow-ngxs.png"><span class="ml-5">Flow Design Diagram</span>
+  </div>
 </div>
 <hr/>
-<div class="p-4">
-  <h2>List from the Ngxs state: </h2>
-  <app-read></app-read>
+<div class="p-4 text-center">
+    <h2>Users available in ngxs state: </h2>
+    <app-read></app-read>
 </div>
